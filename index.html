@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Těchonínský občasník</title>
+    <style>
+      body {
+        background-color: #d6cfc2;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: #1c1a17;
+        margin: 0;
+        padding: 20px;
+      }
+      .newspaper {
+        max-width: 920px;
+        margin: 0 auto;
+        background-color: #f4efe3;
+        padding: 35px 45px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+        border: 1px solid #b8af9c;
+      }
+      .top-bar {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #1c1a17;
+        padding-bottom: 6px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+      }
+      header h1 {
+        font-size: 54px;
+        text-align: center;
+        margin: 15px 0 5px 0;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 900;
+        line-height: 1;
+      }
+      .sub-header {
+        text-align: center;
+        font-style: italic;
+        border-top: 1px solid #1c1a17;
+        border-bottom: 4px double #1c1a17;
+        padding: 6px 0;
+        margin-bottom: 22px;
+        font-size: 15px;
+      }
+      .main-headline {
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.15;
+        margin: 0 0 8px 0;
+        text-transform: uppercase;
+      }
+      .sub-headline {
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        margin: 0 0 22px 0;
+        color: #3d3934;
+      }
+      .columns {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 25px;
+      }
+      @media (max-width: 720px) {
+        .columns {
+          grid-template-columns: 1fr;
+        }
+        header h1 {
+          font-size: 34px;
+        }
+        .top-bar {
+          flex-direction: column;
+          text-align: center;
+          gap: 4px;
+        }
+      }
+      .col-left {
+        border-right: 1px solid #1c1a17;
+        padding-right: 25px;
+      }
+      @media (max-width: 720px) {
+        .col-left {
+          border-right: none;
+          padding-right: 0;
+        }
+      }
+      h3 {
+        font-size: 19px;
+        margin: 18px 0 8px 0;
+        border-bottom: 1px solid #1c1a17;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+      }
+      p {
+        text-align: justify;
+        line-height: 1.55;
+        margin: 0 0 12px 0;
+        font-size: 15px;
+      }
+      .dropcap::first-letter {
+        float: left;
+        font-size: 50px;
+        line-height: 42px;
+        padding-top: 2px;
+        padding-right: 8px;
+        font-weight: bold;
+      }
+      .box-ad {
+        border: 2px dashed #1c1a17;
+        padding: 15px;
+        margin-top: 18px;
+        background-color: #ebe4d3;
+      }
+      .box-ad h4 {
+        margin: 0 0 8px 0;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .code-snippet {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 13px;
+        background-color: #e2dac6;
+        padding: 10px;
+        border-left: 3px solid #1c1a17;
+        margin: 10px 0;
+      }
+      .footer-banner {
+        margin-top: 28px;
+        border-top: 3px double #1c1a17;
+        padding-top: 15px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      @media print {
+        body {
+          background-color: #fff;
+          padding: 0;
+        }
+        .newspaper {
+          box-shadow: none;
+          border: none;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="newspaper">
+      <div class="top-bar">
+        <span>Pátek 5. listopadu 1976</span>
+        <span>Mimořádné vydání</span>
+        <span>Cena: 50 haléřů</span>
+      </div>
+
+      <header>
+        <h1>TĚCHONÍNSKÝ OBČASNÍK</h1>
+        <div class="sub-header">Ústřední orgán Těchonín</div>
+      </header>
+
+      <h2 class="main-headline">
+        KYBERNETICKÝ ZÁZRAK: NA SVĚT PŘIŠEL PRVNÍ ČESKOSLOVENSKÝ „TROJAN HORSE“
+        (VERZE 1.0)!
+      </h2>
+      <div class="sub-headline">
+        Světové antiviry mohou zůstat v klidu: Tento Trojan nemaže děrné štítky,
+        ale řídí software v TH SOFTu a žene občany se toulat kolem Tiché Orlice
+      </div>
+
+      <div class="columns">
+        <div class="col-left">
+          <p class="dropcap">
+            <strong>TĚCHONÍN (Zpravodajství ČTK)</strong> – Přesně v pátek 5.
+            listopadu 1976, uprostřed měsíce československo-sovětského
+            přátelství, byl v naší vlasti úspěšně zkompilován a spuštěn zcela
+            unikátní životní program s krycím názvem
+            <strong>Jiří Trojan</strong>. Skutečnost, že systém naběhl právě v
+            pátek, podle vědců jasně vysvětluje jeho celoživotní orientaci na
+            víkendové akce, točené pivo a grilované maso
+          </p>
+
+          <p>
+            Přední kybernetici z Výzkumného ústavu počítacích strojů po důkladné
+            analýze zdrojového kódu uklidňují veřejnost: Na rozdíl od budoucích
+            počítačových virů tento <em>Trojan</em> neškodí.
+          </p>
+
+          <h3>Prognóza na další roky</h3>
+          <div class="code-snippet">
+            <strong>VÝPIS SÁLOVÉHO POČÍTAČE TESLA:</strong><br />
+            &gt; DETEKOVÁN OBJEKT: Jiří Trojan, DiS. (v1.0)<br />
+            &gt; BUDOUCÍ NASAZENÍ: TH SOFT (Vedoucí SW oddělení)<br />
+            &gt; KOMUNÁLNÍ MODUL: Zastupitel obce Těchonín [OK]<br />
+            &gt; ZÁRUKA STABILNÍHO PROVOZU: Minimálně do roku 2076
+          </div>
+          <p>
+            Sálový počítač zároveň vypočítal simulaci na dalších 50 let.
+            Výsledky šokovaly i otrlé pohraničníky: Jiří Trojan nejenže usedne v
+            zastupitelstvu obce Těchonín (pod heslem
+            <em>Občané pro obec – obec pro občany</em>), ale každoročně vyžene
+            stovky lidí na pochod <strong>Toulání kolem Orlice</strong> přes
+            Dělostřeleckou tvrz Bouda, Rozhlednu Suchý vrch až ke Kašparově
+            chatě na Adamu.
+          </p>
+
+          <h4>Svatba, dva synové a spokojený život</h4>
+          <p>
+            Dne <strong>11. 10. 2008</strong> proběhne nejdůležitější propojení
+            Jiřího života: <strong>svatba s Jančou</strong>. Oba slavnostně
+            kliknou na <em>„Souhlasím“</em> a pořídí si doživotní rodinnou
+            licenci. Janča navíc získá vlastní IT podporu. Jiří až později
+            zjistí, že podpora zahrnuje i celé moravské příbuzenstvo.
+          </p>
+          <p>
+            Dne <strong>16. 7. 2009</strong> nastoupí první tester tátovy
+            trpělivosti, <strong>syn Dan</strong>. Okamžitě zavede nepřetržitý
+            provoz včetně nocí, víkendů a státních svátků. Jiří poprvé v životě
+            zjistí, že některá hlášení nelze odkliknout tlačítkem
+            <em>„Připomenout později“</em> a že režim spánku je dostupný pouze
+            dítěti. A ještě jen občas.
+          </p>
+          <p>
+            Dne <strong>28. 8. 2011</strong> posílí testovací oddělení
+            <strong>syn Vojta</strong>. Dva malí testeři pak společnými silami
+            prověří, co všechno táta vydrží, než se mu začne kouřit z procesoru.
+            Příkaz <em>„Kluci, už spát!“</em> budou vytrvale vracet s chybou
+            <em>„Příkaz nebyl rozpoznán.“</em> Zato hlasové ovládání domácnosti
+            poběží bezchybně: <strong>kluci zařvou a táta běží.</strong>
+            Odborníci přesto potvrdí, že jde o dva nejpovedenější projekty jeho
+            života.
+          </p>
+        </div>
+
+        <div class="col-right">
+          <h3>Události tohoto roku</h3>
+          <p>
+            <strong>KALIFORNIE:</strong> Dva mladíci Jobs a Wozniak v garáži
+            narychlo pájí počítač Apple I. Tajné služby hlásí, že tak činí v
+            panice poté, co zjistili, že v ČSSR byl právě nasazen systém Trojan
+            1.0
+          </p>
+          <p>
+            <strong>HOUSTON &amp; MARS:</strong> Americká sonda Viking 1 marně
+            hledá na rudé planetě stopy inteligentního života. Vědci z NASA se
+            chytají za hlavu – stačilo přitom otočit antény na Ústí nad Orlicí,
+            kde se jeden inteligentní život zrodil -
+            <strong>Jiří Trojan</strong>.
+          </p>
+          <p>
+            <strong>BĚLEHRAD:</strong> Antonín Panenka piluje svůj památný
+            vršovický dloubák. Celý národní tým slibuje, že zlatou medaili z
+            mistrovství Evropy věnuje malému Jirkovi do kolébky.
+          </p>
+
+          <h3>Malá inzerce</h3>
+          <p>
+            <strong>VYMĚNÍM</strong> padesát let zkušeností za dvacetiletou
+            regeneraci po oslavě. Zkušenosti jsou zachovalé, jen některé
+            historky se spouštějí opakovaně.
+          </p>
+
+          <p>
+            <strong>KOUPÍM</strong> náhradní paměť. Stávající si spolehlivě
+            pamatuje hesla k dávno vyřazeným počítačům, ale ne to, pro co jsem
+            šel do kuchyně.
+            <em
+              >Zn.: Jestli už jsem tenhle inzerát podal, otiskněte ho jen
+              jednou.</em
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-banner">
+        🎉 VŠECHNO NEJLEPŠÍ K 50. NAROZENINÁM! AŤ TI VŠECHNO ŠLAPE BEZ ZTRÁTY
+        VLASU, TO SI NEMŮŽEŠ DOVOLIT! 🎉
+      </div>
+    </div>
+  </body>
+</html>
