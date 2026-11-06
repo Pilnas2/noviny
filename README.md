@@ -1,0 +1,2 @@
+# noviny
+Techoninsky obcasnik
